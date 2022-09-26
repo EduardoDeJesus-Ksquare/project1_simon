@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITK - Simon</title>
-</head>
-<body>
-    <!-- Good luck! -->
+<html>
 
-    <script src="./index.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ITK - Simon</title>
+    </head>
+
+    <body>
+        <!-- class="flexbox" creates the body diving into two main rows: 
+        (1) Tittle and button states [tittleContainer], (2) Square buttons for game [buttonContainer] -->
+        <div class="flexBox">   
+
+            <div class="tittleContainer">
+                <div class="buttonsState">
+                    <!--  Use this [tittle] class to change the steps lvl. through JS  -->
+                    <div class="tittle">Simon's Game</div>
+
+                    <!--This flexBox divide each button to have separated "boxes"
+                        Use this [flexBox_row] class to add the buttons responsible to start and restart the game
+                        if needed change it with buttons elements  -->
+                    <div class="flexBox_row">
+                        <div class="buttonStart">
+                            <input type="button" name="buttonStart_user" value="Start" id="buttonStart_id">
+                        </div>
+
+                        <div class="buttonRestart">
+                            <input type="button" name="buttonRestart_user" value="Restart" id="buttonRestart_id">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Use this buttons to create the needed events -->
+            <div class="buttonContainer">
+                <button class="red" id="red_1"></button>
+                <button class="green" id="green_2"></button>
+                <button class="blue" id="blue_3"></button>
+                <button class="yellow" id="yellow_4"></button>
+            </div>
+
+            <div class="footer">
+
+            </div>
+
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+
 </html>

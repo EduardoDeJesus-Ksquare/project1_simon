@@ -1,0 +1,112 @@
+html, body{ height: 100%;}
+
+/*All this is to place the interface*/
+body{
+    margin: 0%;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.flexBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.buttonsState   {
+    /*background-color: rebeccapurple;*/
+    max-width: 450px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.flexBox_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buttonContainer{
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    vertical-align: middle;
+}
+
+
+
+/*These are the initial states of the buttons*/
+
+.red{ background-color: #cc0000;
+    border-radius: 5px;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.blue{ background-color: #0000cc;
+    border-radius: 5px;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;}
+
+.green{ background-color: #009933;
+    border-radius: 5px;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.yellow{ background-color: #e6e600;
+    border-radius: 5px;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+
+/*These are the "special" states of the buttons*/
+
+.pattern_select_red{background-color:	#ff8080;
+    border-radius: 5px;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.pattern_select_green{background-color:	#5cd65c;
+    border-radius: 5px;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;}
+.pattern_select_blue{background-color:	#8080ff;
+    border-radius: 5px;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;}
+.pattern_select_yellow{background-color:	#ffff99;
+    border-radius: 5px;
+    border-color: white;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;}
+
+.footer{
+    font-size: large;
+}
